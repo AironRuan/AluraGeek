@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.all {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+section.menu {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
+    background-color: #5300cb;
+    width: 100%;
+    height: 6rem;
+}
+
+.menu__title {
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-family: "Press Start 2P";
+    font-size: 1.5rem;
+}
+
+section.produtos {
+    display: flex;
+}
+
+/* Centraliza o título */
+.produtos__title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+    font-family: "Press Start 2P";
+
+}
+
+/* Define o contêiner como flexbox */
+.produtos__line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Espaço entre as caixas */
+}
+
+/* Define o estilo das caixas */
+.produtos__box {
+    /* flex: 0 0 30%; */
+    max-width: 30%; /* Define a largura máxima como 30% */
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* Estilo das imagens */
+.produtos__img img {
+    width: 196px;
+    height: 258px;
+    display: block;
+}
+
+section.formcontato{
+    padding: 4rem 2rem;
+}
+
+.formcontato__contato {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+}
+
+.formcontato__text {
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontato__title {
+    font-size: 2rem;
+    font-family: "Press Start 2P";
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 24px;
+}   
+
+.formcontato__form {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: #5300cb;
+}
+
+.formcontato__input {
+    border-radius: 2rem;
+    color: #5300cb;
+    padding: 1rem;
+    border-color: #5300cb;
+    font-size: 15px;
+}
+
+#nome.formcontato__input::placeholder, #valor.formcontato__input::placeholder, #imagem.formcontato__input::placeholder {
+    color: #5300cb;
+}
+
+.formcontato__input:hover, .formcontato__textarea:hover {
+    border-bottom: 3px solid;
+    color: #5300cb;
+}
+
+.botao {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: -2rem;
+}
+
+.experiencia__botao--guardar, .experiencia__botao--limpar {
+    padding: .8rem;
+    color: blue;
+    background-color: #F5F5F5;
+    border: 1px solid blue;
+    cursor: pointer;
+    border-radius:  2rem;
+} 
+
+.experiencia__botao--guardar:hover, .experiencia__botao--limpar:hover {
+    padding: .8rem;
+    color: #F5F5F5;
+    background-color: #5300cb;
+    border: 1px solid #5300cb;
+    cursor: pointer;
+}
+
+section.footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    justify-content: center;
+    background-color: #5300cb;
+    width: 100%;
+    height: 10rem;
+    margin-top: 3rem;
+    text-align: center;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    color: aliceblue;
+    font-size: 1.5rem;
+    font-family: "Press Start 2P";
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__rodape {
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    font-family: "IBM Plex Mono";
+    color: aliceblue;
+    gap: 2px;
+    
+}
+
+@media (max-width: 425px) {
+    .formcontato__title {
+        text-align: center;
+        flex-wrap: wrap;
+    }
+
+    .produtos__box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produtos__line {
+        gap: 5rem;
+    }
+}
+
+
+
+
+
